@@ -1,0 +1,262 @@
+.garage {
+	.action {
+		width: max-content;
+		gap: 12px;
+		&-text {
+			font-size: 15px;
+			line-height: 18px;
+		}
+	}
+	&-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		.action {
+			gap: .555556vw;
+			height: 44px;
+			border: 1px solid #CAD6FF;
+			border-radius: 8px;
+			padding: 0 1.388889vw;
+		}
+	}
+	&-container {
+		margin-top: 82px;
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		grid-gap: 30px 5.694444vw;
+		&__box {
+			position: relative;
+			width: 37.916667vw;
+			background-color: #FFF;
+			border-radius: 12px;
+			padding: 42px .3125vw 20px 1.180556vw;
+			.close {
+				position: absolute;
+				top: 26px;
+				right: 25px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 44px;
+				height: 44px;
+				border: 1px solid #CAD6FF;
+				border-radius: 8px;
+				svg {
+					width: 12px;
+					height: 12px;
+				}
+			}
+			.car-description {
+				position: relative;
+				gap: 3.680556vw;
+				padding: 0 0 31px .833333vw;
+				&::after {
+					position: absolute;
+					content: "";
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: .5px;
+					background-color: #CAD6FF;
+				}
+			}
+			&-history {
+				border: 1px solid #CAD6FF;
+				border-radius: 8px;
+				margin-top: 18px;
+				padding: 13px .625vw 13px 1.458333vw;
+				.action-text {
+					color: #325BEC;
+				}
+				.action-icon {
+					transform: rotate(-90deg);
+				}
+			}
+			&-recomendation {
+				padding: 23px 0 7px;
+				.action-text {
+					color: #EC3832;
+				}
+			}
+			.car-button {
+				margin-top: 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1439px) {
+	.garage-container {
+		margin-top: 75px;
+	}
+}
+@media screen and (max-width: 1279px) {
+	.garage {
+		.action-text {
+			font-size: 14px;
+		}
+		&-header .action {
+			height: 42px;
+		}
+		&-container {
+			margin-top: 68px;
+			grid-gap: 26px 5.694444vw;
+			&__box {
+				.close {
+					width: 36px;
+					height: 36px;
+					svg {
+						width: 10px;
+						height: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.garage {
+		.action-text {
+			font-size: 13px;
+		}
+		&-container {
+			margin-top: 56px;
+			grid-gap: 23px 5.645162vw;
+			&__box {
+				.car-description {
+					padding-bottom: 28px;
+				}
+				&-history {
+					margin-top: 16px;
+					padding-top: 11px;
+					padding-bottom: 11px;
+				}
+				&-recomendation {
+					padding: 21px 0 6px;
+				}
+				.car-button {
+					margin-top: 8px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.garage {
+		.action-text {
+			font-size: 12px;
+		}
+		&-header .action {
+			height: 36px;
+		}
+		&-container {
+			margin-top: 44px;
+			grid-gap: 18px 5.694444vw;
+			&__box {
+				padding-top: 34px;
+				.close {
+					top: 14px;
+					right: 13px;
+					width: 28px;
+					height: 28px;
+					svg {
+						width: 8px;
+						height: 8px;
+					}
+				}
+				.car-description {
+					gap: 1.840278vw;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.garage {
+		.action-text {
+			font-size: 11px;
+		}
+		&-header .action {
+			height: 32px;
+		}
+		&-container {
+			display: flex;
+			flex-direction: column;
+			margin-top: 36px;
+			gap: 15px;
+			&__box {
+				width: 100%;
+				padding: 28px 5.128205vw 17px;
+				.close {
+					top: 15px;
+					right: 15px;
+					width: 28px;
+					height: 28px;
+					svg {
+						width: 8px;
+						height: 8px;
+					}
+				}
+				.car-description {
+					gap: 3.589744vw;
+					margin: 0 -1.538462vw;
+					padding: 0 0 22px;
+				}
+				.car-button {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.garage {
+		padding-top: 4px !important;
+		padding-bottom: 104px !important;
+		.action-text {
+			font-size: 15px;
+		}
+		&-header {
+			.action {
+				gap: 8px;
+				height: 36px;
+				border-radius: 5px;
+				padding: 0 6px;
+				margin-bottom: -51px;
+				&-text {
+					font-size: 13px;
+					line-height: 16px;
+				}
+			}
+		}
+		&-container {
+			margin-top: 81px;
+			&__box {
+				padding-top: 22px;
+				.close {
+					width: 15px;
+					height: 15px;
+					border: none;
+					svg {
+						width: 100%;
+						height: 100%;
+					}
+				}
+				&-history {
+					width: 100% !important;
+					border: none;
+					margin: 0;
+					padding: 22px 0;
+					.action-icon {
+						margin-left: auto;
+					}
+				}
+				&-recomendation {
+					padding: 22px 0 7px;
+				}
+			}
+		}
+		.menu {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,170 @@
+.work-box {
+	display: flex;
+	gap: 1.388889vw;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 20px;
+	padding: 2.222222vw;
+	&__image {
+		width: 34.930556vw;
+		height: 296px;
+		border-radius: 20px;
+	}
+	&__info {
+		display: flex;
+		justify-content: center;
+		gap: 1.388889vw;
+		.logo {
+			height: 51px;
+		}
+		width: 21.736111vw;
+	}
+	.label {
+		font-size: 28px;
+		line-height: 120%;
+		margin-bottom: 12px;
+	}
+	.text {
+		font-size: 18px;
+		line-height: 160%;
+	}
+}
+@media screen and (max-width: 1439px) {
+	.work-box {
+		&__image {
+			height: 262px;
+		}
+		.label {
+			font-size: 26px;
+		}
+		.text {
+			font-size: 17px;
+		}
+	}
+}
+@media screen and (max-width: 1279px) {
+	.work-box {
+		border-radius: 16px;
+		&__image {
+			height: 248px;
+			border-radius: 16px;
+		}
+		.label {
+			font-size: 22px;
+		}
+		.text {
+			font-size: 15px;
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.work-box {
+		border-radius: 12px;
+		&__image {
+			height: 204px;
+			border-radius: 12px;
+		}
+		&__logo {
+			.logo {
+				width: 50%;
+			}
+		}
+		.label {
+			font-size: 19px;
+		}
+		.text {
+			font-size: 13px;
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.work-box {
+		border-radius: 10px;
+		&__image {
+			height: 182px;
+			border-radius: 10px;
+		}
+		.label {
+			font-size: 17px;
+		}
+		.text {
+			font-size: 11px;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.work-box {
+		flex-direction: column;
+		gap: 0;
+		height: 100%;
+		border-radius: 5px;
+		padding: 0 0 12px;
+		&__image {
+			border-radius: 5px 5px 0 0;
+			grid-area: image;
+			width: 100%;
+			height: 162px;
+		}
+		&__icon {
+			position: absolute;
+			justify-content: flex-start;
+			width: auto;
+			top: 184px;
+			left: 3.589744vw;
+			display: flex;
+			width: 30%;
+			margin: auto;
+			.logo {
+				height: 45px;
+			}
+		}
+		&__info,
+		&__improvments {
+			padding: 0 3.589744vw;
+		}
+		&__info {
+			width: auto;
+			gap: 4.615385vw;
+			justify-content: flex-start;
+			margin: 22px 0 15px;
+			.label {
+				margin: 2px 0 14px;
+			}
+			.text {
+				line-height: 18px;
+			}
+		}
+		&__improvments {
+			position: relative;
+			margin-left: 0;
+			padding-top: 10px;
+			height: 170px;
+			overflow-y: scroll;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				top: 0;
+				left: 3.589744vw;
+				width: 82.948718%;
+				height: 1px;
+				background-color: #D9DEEA;
+			}
+			.label {
+				margin-bottom: 8px;
+			}
+			.text {
+				line-height: 20px;
+			}
+		}
+		.label {
+			font-size: 15px;
+			line-height: 23px;
+		}
+		.text {
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,474 @@
+@import "../modal/branch.scss";
+
+.support {
+	&-title {
+		margin-bottom: 30px;
+	}
+	&-content {
+		display: flex;
+		gap: 3.333333vw;
+		&__left {
+			width: 37.847222vw;
+			background-color: #FFF;
+			border-radius: 12px;
+			padding: 20px 2.430556vw 16px 2.083333vw;
+			.input-container {
+				position: relative;
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				.input {
+					width: 23.611111vw;
+					height: 35px;
+					background-color: #EDEDED;
+					border-radius: 30px;
+					padding: 9px .902778vw 8px;
+				}
+				&::after {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background-color: #D6D6D6;
+				}
+			}
+			.select {
+				width: 31.666667vw;
+				margin: 26px 0 15px;
+			}
+			.textarea {
+				width: 31.736111vw !important;
+				height: 173px !important;
+			}
+			.button {
+				width: 15.972222vw;
+				height: 50px;
+				margin: 16px auto 0;
+			}
+		}
+		&__right {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 37.916667vw;
+			.map,
+			.info {
+				width: 100%;
+				background-color: #FFF;
+			}
+			.map {
+				height: 335px;
+				border-radius: 15px;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.info {
+				height: 185px;
+				border-radius: 12px;
+				padding: 15px 1.666667vw 43px 1.388889vw;
+				&-address,
+				&-contacts {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+				&-address {
+					position: relative;
+					margin-bottom: 23px;
+					padding-bottom: 20px;
+					&::after {
+						content: "";
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						height: 1px;
+						background-color: #DDD;
+					}
+					&__title {
+						font-size: 20px;
+						line-height: 14px;
+						margin-bottom: 13px;
+					}
+					&__description {
+						font-size: 14px;
+						line-height: 10px;
+					}
+				}
+				&-contact {
+					display: flex;
+					&:first-child {
+						align-items: center;
+						gap: 1.041667vw;
+					}
+					&:last-child {
+						flex-direction: column;
+						gap: 7px;
+					}
+					.icon {
+						margin: auto;
+					}
+					&__email,
+					&__phone {
+						font-size: 15px;
+						font-weight: 700;
+						line-height: 20px;
+					}
+					&__email {
+						width: 7em;
+						word-wrap: break-word;
+					}
+					&__phone {
+						white-space: nowrap;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1439px) {
+	.support {
+		&-title {
+			margin-bottom: 27px;
+		}
+	}
+}
+@media screen and (max-width: 1279px) {
+	.support {
+		&-title {
+			margin-bottom: 24px;
+		}
+		.input-container .input {
+			height: 32px;
+			padding: 8px .902778vw 7px;
+		}
+		.button {
+			height: 46px;
+		}
+		&-content__right {
+			.info {
+				&-address {
+					&__title {
+						font-size: 18px;
+					}
+					&__description {
+						font-size: 13px;
+					}
+				}
+				&-contact {
+					.icon {
+						width: 32px;
+						height: 32px;
+					}
+					&__email,
+					&__phone {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.support {
+		&-title {
+			margin-bottom: 20px;
+		}
+		&-content {
+			&__left {
+				border-radius: 10px;
+				padding: 18px 2.430556vw 13px 2.083333vw;
+				.input-container {
+					margin-bottom: 12px;
+					padding-bottom: 12px;
+					.input {
+						border-radius: 26px;
+					}
+				}
+				.select {
+					margin: 21px 0 13px;
+				}
+				.textarea {
+					height: 158px !important;
+				}
+				.button {
+					height: 42px;
+					margin: 13px auto 0;
+				}
+			}
+			&__right {
+				.map {
+					height: 280px;
+					border-radius: 13px;
+				}
+				.info {
+					height: 168px;
+					border-radius: 10px;
+					padding: 13px 1.666667vw 38px 1.388889vw;
+					&-address {
+						margin-bottom: 21px;
+						padding-bottom: 18px;
+						&__title {
+							font-size: 17px;
+							margin-bottom: 11px;
+						}
+						&__description {
+							font-size: 12px;
+						}
+					}
+					&-contact {
+						.icon {
+							width: 28px;
+							height: 28px;
+						}
+						&__email,
+						&__phone {
+							font-size: 13px;
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.support {
+		&-title {
+			margin-bottom: 16px;
+		}
+		&-content {
+			&__left {
+				padding: 16px 2.430556vw 11px 2.083333vw;
+				.input-container {
+					.input {
+						height: 28px;
+						border-radius: 22px;
+						padding: 7px .902778vw 6px;
+					}
+				}
+				.select {
+					margin: 18px 0 9px;
+				}
+				.textarea {
+					height: 146px !important;
+				}
+				.button {
+					height: 36px;
+					margin: 11px auto 0;
+				}
+			}
+			&__right {
+				.map {
+					height: 246px;
+				}
+				.info {
+					height: 149px;
+					padding-bottom: 32px;
+					&-address {
+						margin-bottom: 18px;
+						padding-bottom: 15px;
+						&__title {
+							font-size: 15px;
+							margin-bottom: 9px;
+						}
+						&__description {
+							font-size: 11px;
+						}
+					}
+					&-contact {
+						.icon {
+							width: 24px;
+							height: 24px;
+						}
+						&__email,
+						&__phone {
+							font-size: 12px;
+							line-height: 17px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.support {
+		&-title {
+			margin-bottom: 13px;
+		}
+		&-content {
+			&__left {
+				width: 40vw;
+				border-radius: 8px;
+				padding: 13px 2.430556vw 9px 2.083333vw;
+				.input-container {
+					margin-bottom: 10px;
+					padding-bottom: 10px;
+					.input {
+						height: 26px;
+						border-radius: 20px;
+					}
+				}
+				.select {
+					margin-top: 14px;
+				}
+				.textarea {
+					height: 132px !important;
+				}
+				.button {
+					height: 30px;
+					margin: 9px auto 0;
+				}
+			}
+			&__right {
+				width: 45vw;
+				.map {
+					height: 214px;
+					border-radius: 13px;
+				}
+				.info {
+					height: 127px;
+					padding-bottom: 23px;
+					&-address {
+						margin-bottom: 15px;
+						padding-bottom: 12px;
+						&__title {
+							font-size: 13px;
+							margin-bottom: 7px;
+						}
+						&__description {
+							font-size: 10px;
+						}
+					}
+					&-contact {
+						.icon {
+							width: 20px;
+							height: 20px;
+						}
+						&__email,
+						&__phone {
+							font-size: 10px;
+							line-height: 15px;
+						}
+						&__email {
+							width: 12em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.support {
+		padding-bottom: 104px !important;
+		&-title {
+			margin-bottom: 15px;
+		}
+		&-content {
+			flex-direction: column;
+			gap: 21px;
+			background-color: #FFF;
+			border-radius: 12px;
+			&__left,
+			&__right,
+			&__right .info {
+				width: 100%;
+				background-color: transparent;
+				border-radius: 0;
+			}
+			&__left {
+				padding: 12px 3.333333vw;
+				.input-container {
+					margin-bottom: 15px;
+					padding-bottom: 0;
+					.input {
+						width: 100%;
+						height: 35px;
+						border-radius: 30px;
+						padding: 9px 3.333333vw 8px;
+					}
+					&::after {
+						display: none;
+					}
+				}
+				.select {
+					position: relative;
+					margin: 23px 0 15px;
+					padding-top: 18px;
+					&::before {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 1px;
+						background-color: #D6D6D6;
+					}
+				}
+				.textarea {
+					width: 100% !important;
+					height: 172px !important;
+				}
+				.button {
+					width: 58.974359vw;
+					height: 50px;
+					margin: 19px auto 0;
+				}
+			}
+			&__right {
+				.info {
+					height: fit-content;
+					padding: 0;
+					&-address {
+						margin-bottom: 0;
+						padding: 20px 5.128205vw;
+						&::after {
+							display: none;
+						}
+						&__title {
+							font-size: 15px;
+							line-height: 18px;
+							margin-bottom: 13px;
+						}
+						&__description {
+							font-size: 14px;
+						}
+					}
+					&-map {
+						height: 214px;
+						border-radius: 8px;
+						overflow: hidden;
+						margin: 0 3.589744vw 2px 3.333333vw;
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					&-contacts {
+						margin: 11px 3.846154vw;
+					}
+					&-contact {
+						&:first-child {
+							gap: 10px;
+						}
+						.icon {
+							width: 30px;
+							height: 30px;
+						}
+						&__email,
+						&__phone {
+							font-size: 14px;
+							line-height: 19px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

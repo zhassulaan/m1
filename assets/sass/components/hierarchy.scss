@@ -1,0 +1,58 @@
+.hierarchy {
+	display: flex;
+	margin-bottom: 30px;
+	&-link,
+	&-delimiter,
+	&-text {
+		font-size: 14px;
+		line-height: 19px;
+	}
+	&-link {
+		color: #325BEC;
+	}
+	&-delimiter {
+		margin: 0 20px;
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.hierarchy {
+		margin-bottom: 27px;
+		&-link,
+		&-delimiter,
+		&-text {
+			font-size: 13px;
+		}
+		&-delimiter {
+			margin: 0 18px;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.hierarchy {
+		margin-bottom: 22px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.hierarchy {
+		margin-bottom: 17px;
+		&-link,
+		&-delimiter,
+		&-text {
+			font-size: 12px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.hierarchy {
+		margin-bottom: 12px;
+		&-link,
+		&-delimiter,
+		&-text {
+			font-size: 11px;
+		}
+	}
+}

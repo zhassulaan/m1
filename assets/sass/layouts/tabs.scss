@@ -1,0 +1,24 @@
+.tabs {
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	background-color: #325BEC;
+	padding-bottom: 34px;
+	z-index: 3;
+	&-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 5px;
+		width: 20%;
+		height: 50px;
+		.text {
+			font-size: 9px;
+			font-weight: 500;
+			line-height: 11px;
+			color: #FFF;
+		}
+	}
+}

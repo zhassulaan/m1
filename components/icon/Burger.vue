@@ -1,0 +1,31 @@
+<template>
+	<svg
+		width="22"
+		height="16"
+		viewBox="0 0 22 16"
+		fill="none"
+		xmlns="http://www.w3.org/2000/svg"
+	>
+		<path
+			d="M5 8H17"
+			stroke="#325BEC"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M1 1.33325H21"
+			stroke="#325BEC"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			d="M1 14.6665H21"
+			stroke="#325BEC"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</svg>
+</template>

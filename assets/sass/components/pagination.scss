@@ -1,0 +1,102 @@
+.pagination {
+	position: relative;
+	&-controls {
+		position: absolute;
+		bottom: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			background-color: #FFF;
+			border-radius: 8px;
+			.text {
+				font-size: 18px;
+				color: #000;
+			}
+			&.active {
+				background-color: #325BEC;
+				.text {
+					color: #FFF;
+				}
+			}
+		}
+		&__prev {
+			transform: rotate(90deg);
+			margin-right: 15px;
+		}
+		&__next {
+			transform: rotate(-90deg);
+			margin-left: 15px;
+		}
+	}
+}
+@media screen and (max-width: 1439px) {
+	.pagination-controls {
+		bottom: -92px;
+		&__item .text {
+			font-size: 17px;
+		}
+	}
+}
+@media screen and (max-width: 1279px) {
+	.pagination-controls {
+		bottom: -88px;
+		&__item {
+			width: 44px;
+			height: 44px;
+			.text {
+				font-size: 16px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.pagination-controls {
+		bottom: -76px;
+		&__item {
+			width: 38px;
+			height: 38px;
+			.text {
+				font-size: 15px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.pagination-controls {
+		bottom: -69px;
+		&__item {
+			width: 34px;
+			height: 34px;
+			.text {
+				font-size: 13px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.pagination {
+		&-controls {
+			bottom: -60px;
+			&__item {
+				width: 28px;
+				height: 28px;
+				.text {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.pagination-container {
+		min-height: calc(100vh - 282px);
+	}
+}

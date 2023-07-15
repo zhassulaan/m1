@@ -1,0 +1,141 @@
+.advantage-box {
+	background-color: #FFF;
+	border-radius: 12px;
+	padding: 24px 2.222222vw 32px;
+	&__icon {
+		max-width: fit-content;
+		height: 78px;
+		background-color: #F6F7F9;
+		border-radius: 0 12px 12px 0;
+		padding: 16px 2.222222vw;
+		margin-left: -2.222222vw;
+		img {
+			height: 100%;
+		}
+	}
+	.title {
+		font-size: 28px;
+		line-height: 120%;
+		margin: 24px 0 12px;
+	}
+	.text {
+		font-size: 18px;
+		line-height: 120%;
+	}
+}
+@media screen and (max-width: 1439px) {
+  .advantage-box {
+    .title {
+			font-size: 26px;
+		}
+		.text {
+			font-size: 17px;
+		}
+  }
+}
+@media screen and (max-width: 1279px) {
+  .advantage-box {
+    padding: 24px 1.666667vw 32px;
+		&__icon {
+			height: 66px;
+			padding: 13px 2.222222vw;
+		}
+		.title {
+			font-size: 22px;
+		}
+		.text {
+			font-size: 15px;
+		}
+  }
+}
+@media screen and (max-width: 1023px) {
+  .advantage-box {
+    padding: 24px 1.111111vw 32px;
+		&__icon {
+			height: 56px;
+			padding: 11px 1.111111vw;
+			margin-left: -1.111111vw;
+		}
+		.title {
+			font-size: 19px;
+			margin: 20px 0 10px;
+		}
+		.text {
+			font-size: 13px;
+		}
+  }
+}
+@media screen and (max-width: 991px) {
+  .advantage-box {
+    padding: 16px 1.111111vw 22px;
+		&__icon {
+			height: 42px;
+			padding: 8px .666667vw;
+		}
+		.title {
+			font-size: 17px;
+			margin-top: 14px;
+		}
+		.text {
+			font-size: 12px;
+		}
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantage-box {
+    padding: 12px 2.222222vw 18px;
+		&__icon {
+			height: 34px;
+			padding: 6px .666667vw;
+			margin-left: -2.222222vw;
+		}
+		.title {
+			font-size: 15px;
+			margin-bottom: 8px;
+		}
+		.text {
+			font-size: 11px;
+		}
+  }
+}
+@media screen and (max-width: 480px) {
+	.advantage-box {
+		position: relative;
+		border-radius: 10px;
+		padding: 15px 15px 15px 0;
+		&__icon {
+			position: absolute;
+			top: 15px;
+			left: 0;
+			width: 53px;
+			height: 40px;
+			border-radius: 0 8px 8px 0;
+			padding: 12px 13px;
+			margin-left: 0;
+			img {
+				width: 27px;
+			}
+		}
+		.title,
+		.text {
+			line-height: 12px;
+			padding-left: 63px;
+		}
+		.title {
+			font-size: 11px;
+			font-weight: 600;
+			margin: 0;
+			padding-bottom: 9px;
+		}
+		.textbox {
+			height: 36px;
+			overflow-x: hidden;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+		.text {
+			font-size: 9px;
+		}
+	}
+}

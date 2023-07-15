@@ -1,0 +1,25 @@
+.info-box {
+	background-color: #FFF;	
+	border-radius: 10px;
+	padding: 15px 10px;
+	.textbox {
+		height: 36px;
+		overflow: scroll;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	&__title,
+	&__text {
+		line-height: 12px;
+	}
+	&__title {
+		font-size: 11px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	&__description {
+		font-size: 9px;
+		word-break: break-word;
+	}
+}

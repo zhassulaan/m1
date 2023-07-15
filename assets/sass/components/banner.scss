@@ -1,0 +1,52 @@
+.banner {
+	width: 100%;
+	height: inherit;
+	border-radius: 20px;
+	cursor: pointer;
+	.swiper-pagination {
+		display: flex;
+		gap: 2.222221vw;
+		padding: 0 5.555556vw;
+		margin-bottom: 57px;
+		&-bullet {
+			width: 100% !important;
+			height: 6px !important;
+			border-radius: 3px !important;
+			margin: 0 !important;
+			background-color: rgba(255, 255, 255, .3) !important;
+			&-active {
+				background-color: #FFF !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.banner .swiper-pagination {
+		margin-bottom: 52px;
+		&-bullet {
+			height: 5px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.banner .swiper-pagination {
+		margin-bottom: 36px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.banner .swiper-pagination {
+		margin-bottom: 22px;
+		&-bullet {
+			height: 4px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.banner .swiper-pagination-bullet {
+		height: 3px !important;
+	}
+}
