@@ -63,10 +63,10 @@
 		passwordConfirm: "",
 	};
 	let code = "";
-	const seconds = ref(10);
+	const seconds = ref(60);
 	
 	function countdown() {
-		seconds.value = 10;
+		seconds.value = 60;
 		const timer = setInterval(() => {
 			seconds.value--;
 			if (seconds.value === 0) {
@@ -99,7 +99,7 @@
 				username: authIitem.phone,
 			}),
 		});
-		if (error) {
+		if (authIitem.phone !== "" && error) {
 			console.log(error.value.data);
 			type.value = 2;
 			sendCode();
