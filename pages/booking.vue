@@ -45,9 +45,9 @@
 			<calendar v-if="(modal && modal === 2) || isDevice" :day="selectedDay" @close="modal = 0" />
 			<div class="schedule-time">
 				<div class="schedule-time__boxes" v-if="isDevice">
-					<div class="schedule-time__box" :class="{ 'active': selectedTime === idx }" v-for="(time, idx) in times" :key="idx" @click="selectedTime = idx">
+					<div class="schedule-time__box" :class="{ 'active': selectedTime === item.id }" v-for="item in times" :key="item.id" @click="selectedTime = item.id">
 						<icon-clock />
-						{{ time }}
+						{{ item.time.slice(0, 5) }}
 					</div>
 				</div>
 				<div class="schedule-time__boxes" v-else>
@@ -85,12 +85,12 @@
 	const month = date.getMonth();
 	const year = date.getFullYear();
 	const { data: timesData } = await useFetch('http://86.107.45.124:8007/api/reserve/subdivisions/');
-	const times = timesData.value?.results[branch.value].fasts[service.value].schedule.map(item => item.time.slice(0, 5));
+	const times = timesData.value?.results[branch.value].fasts[service.value].schedule;
 	// const times = ["07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"];
 	let modal = ref(0);
 	let selectedBranch = branches[0];
 	let selectedDay = `${today} ${monthNames[month]} ${year}`;
-	let selectedTime = times[0];
+	const selectedTime = ref(times[0].id);
 	let item = {};
 
 	const { data: garage } = await useFetch('http://86.107.45.124:8007/api/garage/', {

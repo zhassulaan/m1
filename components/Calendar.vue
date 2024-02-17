@@ -173,6 +173,7 @@
 					font-size: 14px;
 					line-height: 17px;
 					color: #CDCDCD;
+					cursor: pointer;
 				}
 				.weekNumber {
 					font-size: 10px;
