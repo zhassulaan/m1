@@ -12,7 +12,7 @@ export default defineNuxtPlugin(({ vueApp }) => {
     locale: storedLang,
     messages: {
       ru,
-			kz,
+			kz
     },
   });
   vueApp.use(i18n);

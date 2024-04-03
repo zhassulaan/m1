@@ -8,9 +8,8 @@
 
 <script setup>
 	const props = defineProps({
-		items: Array,
+		items: Array
 	});
-
 	const paginationOptions = {
 		clickable: true,
 		dynamicBullets: false

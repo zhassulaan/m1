@@ -5,13 +5,13 @@ import bentley from "./assets/images/logos/bentley.png";
 import hyundai from "./assets/images/logos/hyundai.png";
 import bmw from "./assets/images/logos/bmw.png";
 import cadillac from "./assets/images/logos/cadillac.png";
-import servicesImage1 from "./assets/images/services1.png";
-import servicesImage2 from "./assets/images/services2.png";
-import servicesImage3 from "./assets/images/services3.png";
-import servicesImage4 from "./assets/images/services4.png";
-import servicesImage5 from "./assets/images/services5.png";
-import servicesImage6 from "./assets/images/services6.png";
-import servicesImage7 from "./assets/images/services7.png";
+import servicesImage1 from "./assets/images/services/image1.png";
+import servicesImage2 from "./assets/images/services/image2.png";
+import servicesImage3 from "./assets/images/services/image3.png";
+import servicesImage4 from "./assets/images/services/image4.png";
+import servicesImage5 from "./assets/images/services/image5.png";
+import servicesImage6 from "./assets/images/services/image6.png";
+import servicesImage7 from "./assets/images/services/image7.png";
 import instruments from "./assets/icons/instruments.svg";
 import steering from "./assets/icons/steering.svg";
 import diagnostics from "./assets/icons/diagnostics.svg";
@@ -26,31 +26,52 @@ export const brands = [
 	{
 		name: "tesla",
 		image: tesla,
-	},
-	{
+	}, {
 		name: "mercedes",
 		image: mercedes,
-	},
-	{
+	}, {
 		name: "lexus",
 		image: lexus,
-	},
-	{
+	}, {
 		name: "bentley",
 		image: bentley,
-	},
-	{
+	}, {
 		name: "hyundai",
 		image: hyundai,
-	},
-	{
+	}, {
 		name: "bmw",
 		image: bmw,
-	},
-	{
+	}, {
 		name: "cadillac",
 		image: cadillac,
 	},
+];
+export const advantages = [
+	{
+		title: "Команда специалистов",
+		text: "В компании действует обязательная система обучения сотрудников. Все автомеханики проходят профессиональную подготовку",
+		icon: ""
+	}, {
+		title: "Специализированное оборудование",
+		text: "Наличие профессиональной аппаратуры и необходимых инструментов в каждом филиале технических центров «M1 Сервис» – залог качества и оперативности выполнения ремонтных работ. Высокий уровень технического оснащения позволяет диагностировать и устранять нетипичные неисправности",
+		icon: ""
+	}, {
+		title: "Высокое качество запчастей",
+		text: "Оригинальные запчасти и качественные аналоги в наличии",
+		icon: ""
+	}, {
+		title: "Гарантия качества",
+		text: "Мы предоставляем гарантию на материалы, запчасти, выполненные работы",
+		icon: ""
+	}, {
+		title: "Индивидуальный подход",
+		text: "Мы ценим ваше доверие, поэтому стараемся учитывать все требования и пожелания, помогающие нам становиться лучше для вас",
+		icon: ""
+	}, {
+		title: "Система акций и бонусов",
+		text: "Скидки, акционные предложения, а также бонусные карты помогут значительно экономить",
+		icon: ""
+	}
 ];
 export const services = [
 	{
@@ -66,8 +87,7 @@ export const services = [
 			"Замена сажевого фильтра",
 		],
 		icon: instruments,
-	},
-	{
+	}, {
 		name: "Ремонт рулевого управления",
 		description: [
 			"Замена внутреннего ШРУСа",
@@ -80,8 +100,7 @@ export const services = [
 			"Замена пыльника рулевой рейки",
 		],
 		icon: steering,
-	},
-	{
+	}, {
 		name: "Диагностика автомобиля",
 		description: [
 			"Диагностика АБС",
@@ -94,8 +113,7 @@ export const services = [
 			"Диагностика генератора",
 		],
 		icon: diagnostics,
-	},
-	{
+	}, {
 		name: "Ремонт выхлопной системы",
 		description: [
 			"Замена впускного коллектора",
@@ -107,8 +125,7 @@ export const services = [
 			"Замена приемной трубы глушителя",
 		],
 		icon: wrench,
-	},
-	{
+	}, {
 		name: "Ремонт тормозной системы",
 		description: [
 			"Замена вакуумного усилителя",
@@ -118,8 +135,7 @@ export const services = [
 			"Замена переднего суппорта",
 		],
 		icon: brake,
-	},
-	{
+	}, {
 		name: "Ремонт кондиционеров и отопления",
 		description: [
 			"Антибактериальная обработка",
@@ -132,8 +148,7 @@ export const services = [
 			"Замена ремня кондиционера",
 		],
 		icon: fan,
-	},
-	{
+	}, {
 		name: "Шиномонтажные работы",
 		description: [
 			"Балансировка колес",
@@ -145,8 +160,7 @@ export const services = [
 			"Шиномонтаж",
 		],
 		icon: tire,
-	},
-	{
+	}, {
 		name: "Ремонт электрооборудования автомобиля",
 		description: [
 			"Замена блока предохранителей",
@@ -171,8 +185,7 @@ export const services2 = [
 		],
 		icon: instruments,
 		image: servicesImage1,
-	},
-	{
+	}, {
 		name: "Обслуживание тормозных систем",
 		description: [
 			"Замена тормозных дисков",
@@ -182,8 +195,7 @@ export const services2 = [
 		],
 		icon: brake,
 		image: servicesImage2,
-	},
-	{
+	}, {
 		name: "Техническое обслуживание",
 		description: [
 			"Регулировка Фар",
@@ -193,8 +205,7 @@ export const services2 = [
 		],
 		icon: wrench,
 		image: servicesImage3,
-	},
-	{
+	}, {
 		name: "Геометрия колес",
 		description: [
 			"Балансировка колес",
@@ -208,8 +219,7 @@ export const services2 = [
 		],
 		icon: tire,
 		image: servicesImage4,
-	},
-	{
+	}, {
 		name: "Замена технических жидкостей",
 		description: [
 			"Масло в двигателе",
@@ -219,8 +229,7 @@ export const services2 = [
 		],
 		icon: diagnostics,
 		image: servicesImage5,
-	},
-	{
+	}, {
 		name: "Ремонт ходовой части",
 		description: [
 			"Замена внутреннего ШРУСа",
@@ -230,8 +239,7 @@ export const services2 = [
 		],
 		icon: steering,
 		image: servicesImage6,
-	},
-	{
+	}, {
 		name: "Мойка",
 		description: [
 			"Автомойка",
@@ -254,23 +262,19 @@ export const branches = [
 		id: 1,
 		title: "ул. Н. Назарбаев, 216 А",
 		description: "“Пятое колесо”",
-	},
-	{
+	}, {
 		id: 2,
 		title: "ул. Н. Назарбаев, 254",
 		description: "АЦ “Пилот”",
-	},
-	{
+	}, {
 		id: 3,
 		title: "ул. А. Пушкина, 132",
 		description: "",
-	},
-	{
+	}, {
 		id: 4,
 		title: "ул. П. Чайковского, 2",
 		description: "",
-	},
-	{
+	}, {
 		id: 5,
 		title: "ул. Болатбаева 65 Б",
 		description: "",
@@ -283,8 +287,7 @@ export const notifications = [
 		date: "30.05.2023",
 		time: "11:12",
 		rated: true,
-	},
-	{
+	}, {
 		title: "Началась обслуживание автомобиля",
 		services: ["Замена шин"],
 		date: "30.05.2023",
