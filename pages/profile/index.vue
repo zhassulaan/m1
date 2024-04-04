@@ -65,7 +65,7 @@
 </template>
 
 <script setup>
-	import { branches } from "~/data";
+	import { branches } from "@/assets/data";
 
 	const isDevice = useIsDevice();
 	const user = await getUserInfo();

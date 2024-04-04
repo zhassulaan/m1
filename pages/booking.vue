@@ -71,7 +71,7 @@
 </template>
 
 <script setup>
-	import { services2, branches } from "~/data";
+	import { services2, branches } from "@/assets/data";
 
 	const isDevice = useIsDevice();
 	const selectedCar = ref(-1);

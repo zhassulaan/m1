@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-	import { notifications } from "~/data";
+	import { notifications } from "@/assets/data";
 
 	const router = useRouter();
 	const isDevice = useIsDevice();
