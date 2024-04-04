@@ -1,13 +1,13 @@
 <template>
 	<swiper v-bind="swiperOptions" :modules="hasPagination && modules" :pagination="hasPagination && paginationOptions" class="slider" :class="{ 'active': hasPagination }" @swiper="onSwiper">
-		<swiper-slide v-for="(item, idx) in items" :key="idx">
+		<swiper-slide v-for="(item, id) in items" :key="id">
 			<slot :sliderObject="item"></slot>
 		</swiper-slide>
 		
-		<div class="swiper-button-prev" v-if="hasPagination" @click="goToPrevSlide">
+		<div v-if="hasPagination" class="swiper-button-prev" @click="goToPrevSlide">
 			<icon-prev />
 		</div>
-		<div class="swiper-button-next" v-if="hasPagination" @click="goToNextSlide">
+		<div v-if="hasPagination" class="swiper-button-next" @click="goToNextSlide">
 			<icon-next />
 		</div>
 	</swiper>

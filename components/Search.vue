@@ -1,14 +1,14 @@
 <template>
   <label for="search" class="search" :class="{ 'active': isActive }">
-		<icon-search-black class="icon" v-if="isDevice" />
+		<icon-search-black v-if="isDevice" class="icon" />
     <input
-      type="text"
-      :placeholder="placeholder"
-      id="search"
-      class="search-input"
-      v-model="input"
-      @focus="isActive = true"
-      @blur="isActive = false"
+		id="search"
+		type="text"
+		:placeholder="placeholder"
+		class="search-input"
+		v-model="input"
+		@focus="isActive = true"
+		@blur="isActive = false"
     />
 		<div class="button btn" v-if="!isDevice">
 			<icon-search-white class="button-icon" />

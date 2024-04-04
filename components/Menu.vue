@@ -1,6 +1,6 @@
 <template>
 	<div class="menu">
-		<action class="menu-edit" v-if="canEdit && isDevice" @click="edit">
+		<action v-if="canEdit && isDevice" class="menu-edit" @click="edit">
 			<template #icon>
 				<icon-pencil />
 			</template>
@@ -53,7 +53,7 @@
 				</template>
 			</action>
 		</div>
-		<Button :text="$t('logout')" v-if="!isDevice" @click="removeAuthTokens()" />
+		<Button v-if="!isDevice" :text="$t('logout')" @click="removeAuthTokens()" />
 	</div>
 </template>
 

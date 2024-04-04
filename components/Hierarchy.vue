@@ -1,7 +1,7 @@
 <template>
 	<div class="hierarchy" v-if="isDevice">
 		<nuxt-link to="/" class="hierarchy-link">{{ $t('main') }}</nuxt-link>
-		<div v-for="(item, idx) in props.path" :key="idx">
+		<div v-for="(item, id) in props.path" :key="id">
 			<span class="hierarchy-delimiter">·</span>
 			<nuxt-link :to="generatePath(idx)" class="hierarchy-link" v-if="(idx < props.path.length - 1)">{{ item }}</nuxt-link>
 			<span class="hierarchy-text" v-else>{{ item }}</span>

@@ -5,7 +5,7 @@
       <icon-chevron-grey class="select-label__icon" />
     </div>
     <div v-if="show" class="select-dropdown">
-			<input type="text" placeholder="Введите марку авто вручную..." class="select-dropdown__search" v-if="withSearch" v-model="search_query" />
+			<input v-if="withSearch" type="text" placeholder="Введите марку авто вручную..." class="select-dropdown__search" v-model="search_query" />
       <ul class="select-dropdown__list">
         <li v-for="(item, index) in filteredItems" :key="index" class="select-dropdown__list-item" @click="selectItem(item)">
           {{ item }}

@@ -1,17 +1,17 @@
 <template>
   <div class="pagination">
     <div class="pagination-container">
-			<div class="pagination-container__item" v-for="(item, idx) in displayedItems" :key="idx">
+			<div v-for="(item, id) in displayedItems" :key="id" class="pagination-container__item">
 				<slot :paginationObject="item"></slot>
 			</div>
     </div>
 
     <div class="pagination-controls">
-			<icon-chevron-blue class="pagination-controls__prev" v-if="currentPage !== 1" @click="prevPage" />
-      <div class="pagination-controls__item btn" :class="{ 'active': page === currentPage }" v-for="(page, idx) in totalPages" :key="idx" @click="goToPage(page)">
+			<icon-chevron-blue v-if="currentPage !== 1" class="pagination-controls__prev" @click="prevPage" />
+      <div v-for="(page, id) in totalPages" :key="id" class="pagination-controls__item btn" :class="{ 'active': page === currentPage }" @click="goToPage(page)">
 				<p class="text">{{ page }}</p>
 			</div>
-			<icon-chevron-blue class="pagination-controls__next" v-if="currentPage !== totalPages" @click="nextPage" />
+			<icon-chevron-blue v-if="currentPage !== totalPages" class="pagination-controls__next" @click="nextPage" />
     </div>
   </div>
 </template>

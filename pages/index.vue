@@ -38,7 +38,7 @@
 		<div v-if="isDevice">
 			<h2 class="home-title" id="advantages">{{ $t('advantagesHeader') }}</h2>
 			<div class="home-advantages">
-				<box-advantage :key="idx" v-for="(advantageItem, idx) in advantages.results">
+				<box-advantage v-for="(advantageItem, id) in advantages.results" :key="id">
 					<template #icon>
 						<img :src="advantageItem.image" :alt="advantageItem.title" />
 					</template>
@@ -69,7 +69,7 @@
 			<h2 class="home-title">{{ $t('reglamentHeader') }}</h2>
 			<div class="home-reglament">
 				<div class="home-reglament__content">
-					<img src="@/assets/images/main_image.png" alt="main image" class="home-reglament__content-image" />
+					<img src="@/assets/images/main_image.png" alt="Reglament background image" class="home-reglament__content-image" />
 					<div class="home-reglament__content-background"></div>
 					<div class="home-reglament__content-left">
 						<div class="item">
@@ -201,11 +201,11 @@
 					<img :src="swipperObject.image" alt="banner" class="home-banner2__image" />
 					<div class="home-banner2__background"></div>
 					<div class="home-banner2__content">
-						<icon-logo-white class="logo" v-if="!isDevice" />
+						<icon-logo-white v-if="!isDevice" class="logo" />
 						<h6 v-if="isDevice" class="title">{{ swipperObject.title }}</h6>
 						<h6 v-if="!isDevice" class="title">{{ swipperObject.title.split('. ')[1] }}</h6>
 						<div v-if="isDevice" class="info">
-							<box-banner :key="item.id" :type=" item.id === 3 ? 2 : 1" v-for="item in swipperObject.items">
+							<box-banner v-for="item in swipperObject.items" :key="item.id" :type=" item.id === 3 ? 2 : 1">
 								<p class="text"><b>{{ item.title }}</b> — {{ item.text }}</p>
 							</box-banner>
 						</div>
@@ -260,7 +260,7 @@
 		<div v-if="isDevice">
 			<h2 class="home-title">{{ $t('services') }}</h2>
 			<div class="home-services">
-				<box-service :key="idx" :item="serviceItem" v-for="(serviceItem, idx) in services.results" />
+				<box-service v-for="(serviceItem, id) in services.results" :key="id" :item="serviceItem" />
 			</div>
 		</div>
 
@@ -268,7 +268,7 @@
 		<div v-if="isDevice" id="bonuses" class="home-bonuses">
 			<h2 class="home-title">{{ $t('active_discount') }}</h2>
 			<div class="home-bonuses__content">
-				<div :key="idx" class="home-bonuses__content-item" v-for="(bonus, idx) in bonuses.results">
+				<div v-for="(bonus, id) in bonuses.results" :key="id" class="home-bonuses__content-item">
 					<img :src="bonus.image" :alt="bonus.title" class="image" />
 					<div class="background"></div>
 					<div class="info">
