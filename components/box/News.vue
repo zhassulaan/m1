@@ -12,9 +12,8 @@
 <script setup>
 const props = defineProps({
 		item: Object,
-		detail: Boolean,
+		detail: Boolean
 	});
-
 	const route = useRouter();
 	const moveTo = () => route.push({ name: "news-id", params: { id: props.item.id } });
 </script>

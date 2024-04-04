@@ -15,8 +15,8 @@
 		margin-bottom: 42px;
 		padding-top: 100px;
 	}
-	&-banner1,
-	&-banner2 {
+	&-hero,
+	&-banner {
 		width: 95.55556vw;
 		margin: 0 -2.222222vw;
 		&__image {
@@ -43,7 +43,7 @@
 			}
 		}
 	}
-	&-banner1 {
+	&-hero {
 		max-height: 594px;
 		height: 594px;
 		&__background {
@@ -85,7 +85,7 @@
 			}
 		}
 	}
-	&-banner2 {
+	&-banner {
 		max-height: 691px;
 		height: 691px;
 		&__background {
@@ -241,7 +241,7 @@
     	margin-bottom: 36px;
     	padding-top: 85px;
   	}
-		&-banner1 {
+		&-hero {
 			.button-text,
 			.text {
 				font-size: 17px !important;
@@ -281,7 +281,7 @@
     	margin-bottom: 30px;
     	padding-top: 65px;
   	}
-		&-banner1 {
+		&-hero {
 			max-height: 526px;
 			height: 526px;
 			&__content {
@@ -307,7 +307,7 @@
 				}
 			}
 		}
-		&-banner2 {
+		&-banner {
 			max-height: 616px;
 			height: 616px;
 			&__content {
@@ -372,7 +372,7 @@
     	margin-bottom: 24px;
     	padding-top: 45px;
   	}
-		&-banner1 {
+		&-hero {
 			max-height: 420px;
 			height: 420px;
 			&__content {
@@ -398,7 +398,7 @@
 				}
 			}
 		}
-		&-banner2 {
+		&-banner {
 			max-height: 486px;
 			height: 486px;
 			&__content {
@@ -459,7 +459,7 @@
     	margin-bottom: 18px;
     	padding-top: 25px;
   	}
-		&-banner1 {
+		&-hero {
 			max-height: 342px;
 			height: 342px;
 			&__content {
@@ -480,7 +480,7 @@
 				}
 			}
 		}
-		&-banner2 {
+		&-banner {
 			max-height: 392px;
 			height: 392px;
 			&__content {
@@ -548,7 +548,7 @@
 		.slider .swiper-wrapper {
 			gap: 2.222222vw;
 		}
-		&-banner1 {
+		&-hero {
 			max-height: 274px;
 			height: 274px;
 			&__content {
@@ -573,7 +573,7 @@
 				}
 			}
 		}
-		&-banner2 {
+		&-banner {
 			max-height: 392px;
 			height: 392px;
 			&__content {
@@ -683,8 +683,8 @@
 			margin-bottom: 15px;
 			padding-top: 30px;
 		}
-		&-banner1,
-		&-banner2 {
+		&-hero,
+		&-banner {
 			width: 100%;
 			margin: 0;
 			border-radius: 10px;
@@ -692,7 +692,7 @@
 				border-radius: 10px;
 			}
 		}
-		&-banner1 {
+		&-hero {
 			max-height: 170px;
 			height: 170px;
 			&__content {
@@ -716,7 +716,7 @@
 				}
 			}
 		}
-		&-banner2 {
+		&-banner {
 			max-height: 184px;
 			height: 184px;
 			&__content {

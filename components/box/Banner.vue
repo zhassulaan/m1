@@ -6,6 +6,6 @@
 
 <script setup>
 	const props = defineProps({
-		type: Number,
+		type: Number
 	});
 </script>

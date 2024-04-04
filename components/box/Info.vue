@@ -9,6 +9,6 @@
 
 <script setup>
 	const props = defineProps({
-		item: Object,
+		item: Object
 	});
 </script>

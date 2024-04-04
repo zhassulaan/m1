@@ -22,7 +22,7 @@
 			<box-contact :branch="selectedBranch" @open="modal = 1" />
 		</div>
 		<div class="booking-content free_places">
-			<img src="../assets/images/background.png" alt="background" class="free_places-image" />
+			<img src="../assets/images/background.png" alt="Background" class="free_places-image" />
 			<div class="free_places-container">
 				<h6 class="free_places-container__text">Есть свободные места на Пушкина</h6>
 				<Button :type="1" :text="'Забронировать'" class="free_places-container__button" />

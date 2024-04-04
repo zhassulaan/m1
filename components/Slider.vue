@@ -18,33 +18,30 @@
 		items: Array,
 		hasPagination: {
 			type: Boolean,
-			default: true,
-		},
+			default: true
+		}
 	});
-
 	const swiperOptions = {
 		loop: true,
 		slidesPerView: "auto",
-		spaceBetween: 0,
+		spaceBetween: 0
 	};
 	const paginationOptions = {
 		clickable: true,
 		dynamicBullets: false
 	};
 	const modules = [SwiperPagination];
-
 	let swiperInstance;
+
 	function onSwiper(swiper) {
 		swiperInstance = swiper;
 	}
 	function goToPrevSlide() {
-		if (swiperInstance) {
+		if (swiperInstance)
 			swiperInstance.slidePrev();
-		}
 	}
 	function goToNextSlide() {
-		if (swiperInstance) {
+		if (swiperInstance)
 			swiperInstance.slideNext();
-		}
 	}
 </script>

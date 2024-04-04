@@ -8,7 +8,7 @@
 				<h6 class="name">{{ user.name || user.username }}</h6>
 				<div class="avatar">
 					<input type="file" accept="image/*" class="btn" @change="changeAvatar">
-					<img :src="user.image" alt="avatar" class="avatar-image" v-if="user.image" />
+					<img :src="user.image" alt="Avatar" class="avatar-image" v-if="user.image" />
 					<icon-mobile-user class="avatar-icon" v-if="!user.image" />
 				</div>
 				<div class="notification">

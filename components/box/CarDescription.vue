@@ -1,6 +1,6 @@
 <template>
 	<div class="car-description">
-		<img :src="car.mark.image" alt="logo" class="car-description__logo" />
+		<img :src="car.mark.image" alt="Logo" class="car-description__logo" />
 		<div class="car-description__info">
 			<h6 class="title">{{ car.mark.name }}</h6>
 			<p class="text">
@@ -21,6 +21,6 @@
 
 <script setup>
 	const props = defineProps({
-		car: Object,
+		car: Object
 	});
 </script>

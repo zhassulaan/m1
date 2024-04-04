@@ -24,7 +24,7 @@
 					<div class="signature" v-if="!isDevice">
 						<p class="text">{{ $t('filial') }}: Севастопольский пер. 34, Астана 020000, Казахстан</p>
 						<p class="text">{{ $t('signature') }}:</p>
-						<img src="@/assets/images/signature.png" alt="signature" class="image" />
+						<img src="@/assets/images/signature.png" alt="Signature" class="image" />
 					</div>
 				</div>
 				<div class="history-detail__box-right">
@@ -43,7 +43,7 @@
 					<div class="signature" v-if="isDevice">
 						<p class="text">{{ $t('filial') }}: {{ history.filial }}</p>
 						<p class="text">{{ $t('signature') }}:</p>
-						<img src="@/assets/images/signature.png" alt="signature" class="image" />
+						<img src="@/assets/images/signature.png" alt="Signature" class="image" />
 					</div>
 				</div>
 			</div>

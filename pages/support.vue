@@ -19,7 +19,7 @@
 			</form>
 			<div class="support-content__right">
 				<div class="map" v-if="isDevice">
-					<img src="@/assets/images/map.png" alt="map" />
+					<img src="@/assets/images/map.png" alt="Map" />
 				</div>
 				<div class="info">
 					<div class="info-address">
@@ -30,7 +30,7 @@
 						<icon-chevron-blue class="btn" @click="modal = !modal" />
 					</div>
 					<div class="info-map" v-if="!isDevice">
-						<img src="@/assets/images/map.png" alt="map" />
+						<img src="@/assets/images/map.png" alt="Map" />
 					</div>
 					<div class="info-contacts">
 						<span class="info-contact">

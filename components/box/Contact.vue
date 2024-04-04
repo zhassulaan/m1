@@ -29,13 +29,13 @@
 		<icon-chevron-blue class="btn" @click="openModal" />
 	</div>
 	<div class="contact-map">
-		<img src="@/assets/images/map.png" alt="map">
+		<img src="@/assets/images/map.png" alt="Map">
 	</div>
 </template>
 
 <script setup>
 	const props = defineProps({
-		branch: Object,
+		branch: Object
 	});
 	const emit = defineEmits(["open"]);
 	const isDevice = useIsDevice();

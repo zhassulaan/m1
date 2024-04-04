@@ -1,76 +1,166 @@
-import tesla from "./assets/images/logos/tesla.png";
-import mercedes from "./assets/images/logos/mercedes.png";
-import lexus from "./assets/images/logos/lexus.png";
-import bentley from "./assets/images/logos/bentley.png";
-import hyundai from "./assets/images/logos/hyundai.png";
-import bmw from "./assets/images/logos/bmw.png";
-import cadillac from "./assets/images/logos/cadillac.png";
-import servicesImage1 from "./assets/images/services/image1.png";
-import servicesImage2 from "./assets/images/services/image2.png";
-import servicesImage3 from "./assets/images/services/image3.png";
-import servicesImage4 from "./assets/images/services/image4.png";
-import servicesImage5 from "./assets/images/services/image5.png";
-import servicesImage6 from "./assets/images/services/image6.png";
-import servicesImage7 from "./assets/images/services/image7.png";
-import instruments from "./assets/icons/instruments.svg";
-import steering from "./assets/icons/steering.svg";
-import diagnostics from "./assets/icons/diagnostics.svg";
-import wrench from "./assets/icons/wrench.svg";
-import brake from "./assets/icons/brake.svg";
-import fan from "./assets/icons/fan.svg";
-import tire from "./assets/icons/tire.svg";
-import accumulator from "./assets/icons/accumulator.svg";
-import washing from "./assets/icons/washing.svg";
+import advantagesIcon1 from "@/assets/icons/advantages/icon1.svg";
+import advantagesIcon2 from "@/assets/icons/advantages/icon2.svg";
+import advantagesIcon3 from "@/assets/icons/advantages/icon3.svg";
+import advantagesIcon4 from "@/assets/icons/advantages/icon4.svg";
+import advantagesIcon5 from "@/assets/icons/advantages/icon5.svg";
+import advantagesIcon6 from "@/assets/icons/advantages/icon6.svg";
+import accumulator from "@/assets/icons/services/accumulator.svg";
+import brake from "@/assets/icons/services/brake.svg";
+import diagnostics from "@/assets/icons/services/diagnostics.svg";
+import fan from "@/assets/icons/services/fan.svg";
+import instruments from "@/assets/icons/services/instruments.svg";
+import steering from "@/assets/icons/services/steering.svg";
+import tire from "@/assets/icons/services/tire.svg";
+import wrench from "@/assets/icons/services/wrench.svg";
+import bronze from "@/assets/images/bonuses/bronze.png";
+import gold from "@/assets/images/bonuses/gold.png";
+import silver from "@/assets/images/bonuses/silver.png";
+import discount1 from "@/assets/images/discounts/image1.png";
+import discount2 from "@/assets/images/discounts/image2.png";
+import discount3 from "@/assets/images/discounts/image3.png";
+import bentley from "@/assets/images/logos/bentley.png";
+import bmw from "@/assets/images/logos/bmw.png";
+import cadillac from "@/assets/images/logos/cadillac.png";
+import ford from "@/assets/images/logos/ford.png";
+import hyundai from "@/assets/images/logos/hyundai.png";
+import lexus from "@/assets/images/logos/lexus.png";
+import mazda from "@/assets/images/logos/mazda.png";
+import mercedes from "@/assets/images/logos/mercedes.png";
+import nissan from "@/assets/images/logos/nissan.png";
+import subaru from "@/assets/images/logos/subaru.png";
+import tesla from "@/assets/images/logos/tesla.png";
+import news1 from "@/assets/images/news/image1.png";
+import news2 from "@/assets/images/news/image2.png";
+import news3 from "@/assets/images/news/image3.png";
+import news4 from "@/assets/images/news/image4.png";
+import news5 from "@/assets/images/news/image5.png";
+import news6 from "@/assets/images/news/image6.png";
+import news7 from "@/assets/images/news/image7.png";
+import news8 from "@/assets/images/news/image8.png";
+import news9 from "@/assets/images/news/image9.png";
+import service1 from "@/assets/images/services/image1.png";
+import service2 from "@/assets/images/services/image2.png";
+import service3 from "@/assets/images/services/image3.png";
+import service4 from "@/assets/images/services/image4.png";
+import service5 from "@/assets/images/services/image5.png";
+import service6 from "@/assets/images/services/image6.png";
+import service7 from "@/assets/images/services/image7.png";
+import work1 from "@/assets/images/works/image1.png";
+import work2 from "@/assets/images/works/image2.png";
+import work3 from "@/assets/images/works/image3.png";
+import work4 from "@/assets/images/works/image4.png";
+import work5 from "@/assets/images/works/image5.png";
+import carBlack from "@/assets/images/car-black.png";
+import carRed from "@/assets/images/car-red.png";
+import washing from "@/assets/icons/washing.svg";
 
-export const brands = [
+export const hero = [
 	{
-		name: "tesla",
-		image: tesla,
+		title: "Запишитесь онлайн на сервис",
+		button1: "Подробнее",
+		button2: "Записаться",
+		image: carBlack
 	}, {
-		name: "mercedes",
-		image: mercedes,
+		title: "Запишитесь онлайн на сервис",
+		button1: "Подробнее",
+		button2: "Записаться",
+		image: carBlack
 	}, {
-		name: "lexus",
-		image: lexus,
-	}, {
-		name: "bentley",
-		image: bentley,
-	}, {
-		name: "hyundai",
-		image: hyundai,
-	}, {
-		name: "bmw",
-		image: bmw,
-	}, {
-		name: "cadillac",
-		image: cadillac,
-	},
+		title: "Запишитесь онлайн на сервис",
+		button1: "Подробнее",
+		button2: "Записаться",
+		image: carBlack
+	}
 ];
+export const brands = {
+	tesla: {
+		name: "tesla",
+		image: tesla
+	},
+	mercedes: {
+		name: "mercedes",
+		image: mercedes
+	},
+	lexus: {
+		name: "lexus",
+		image: lexus
+	},
+	bentley: {
+		name: "bentley",
+		image: bentley
+	},
+	hyundai: {
+		name: "hyundai",
+		image: hyundai
+	},
+	bmw: {
+		name: "bmw",
+		image: bmw
+	},
+	cadillac: {
+		name: "cadillac",
+		image: cadillac
+	},
+	ford: {
+		name: "ford",
+		image: ford
+	},
+	subaru: {
+		name: "subaru",
+		image: subaru
+	},
+	mazda: {
+		name: "mazda",
+		image: mazda
+	},
+	nissan: {
+		name: "nissan",
+		image: nissan
+	}
+};
 export const advantages = [
 	{
 		title: "Команда специалистов",
 		text: "В компании действует обязательная система обучения сотрудников. Все автомеханики проходят профессиональную подготовку",
-		icon: ""
+		icon: advantagesIcon1
 	}, {
 		title: "Специализированное оборудование",
 		text: "Наличие профессиональной аппаратуры и необходимых инструментов в каждом филиале технических центров «M1 Сервис» – залог качества и оперативности выполнения ремонтных работ. Высокий уровень технического оснащения позволяет диагностировать и устранять нетипичные неисправности",
-		icon: ""
+		icon: advantagesIcon2
 	}, {
 		title: "Высокое качество запчастей",
 		text: "Оригинальные запчасти и качественные аналоги в наличии",
-		icon: ""
+		icon: advantagesIcon3
 	}, {
 		title: "Гарантия качества",
 		text: "Мы предоставляем гарантию на материалы, запчасти, выполненные работы",
-		icon: ""
+		icon: advantagesIcon4
 	}, {
 		title: "Индивидуальный подход",
 		text: "Мы ценим ваше доверие, поэтому стараемся учитывать все требования и пожелания, помогающие нам становиться лучше для вас",
-		icon: ""
+		icon: advantagesIcon5
 	}, {
 		title: "Система акций и бонусов",
 		text: "Скидки, акционные предложения, а также бонусные карты помогут значительно экономить",
-		icon: ""
+		icon: advantagesIcon6
+	}
+];
+export const banner = [
+	{
+		title: "Мы — сеть автосервисов М1 Сервис. Работаем с 2006 года и уже 16 лет успешно развиваемся в сфере технического обслуживания автомобилей",
+		items: [
+			{
+				title: "Наша миссия",
+				text: "сделать техническое обслуживание простым, доступным и удобным"
+			}, {
+				title: "Наши клиенты",
+				text: "частные лица и корпоративные автопарки"
+			}, {
+				title: "Наши партнёры",
+				text: "государственные учреждения, транспортные компании, автоклубы, торговые предприятия, таксопарки, аграрные предприятия, крестьянские хозяйства, производственные объекты (заводы)"
+			}
+		],
+		image: carRed
 	}
 ];
 export const services = [
@@ -84,9 +174,9 @@ export const services = [
 			"Замена приводного ремня",
 			"Замена прокладки поддона",
 			"Замена ролика приводного ремня",
-			"Замена сажевого фильтра",
+			"Замена сажевого фильтра"
 		],
-		icon: instruments,
+		icon: instruments
 	}, {
 		name: "Ремонт рулевого управления",
 		description: [
@@ -97,9 +187,9 @@ export const services = [
 			"Замена насоса гидроусилителя",
 			"Замена пыльника ШРУСа",
 			"Замена пыльника наружного ШРУСа",
-			"Замена пыльника рулевой рейки",
+			"Замена пыльника рулевой рейки"
 		],
-		icon: steering,
+		icon: steering
 	}, {
 		name: "Диагностика автомобиля",
 		description: [
@@ -110,9 +200,9 @@ export const services = [
 			"Диагностика авто перед покупкой",
 			"Диагностика вариатора",
 			"Диагностика выхлопной системы",
-			"Диагностика генератора",
+			"Диагностика генератора"
 		],
-		icon: diagnostics,
+		icon: diagnostics
 	}, {
 		name: "Ремонт выхлопной системы",
 		description: [
@@ -122,9 +212,9 @@ export const services = [
 			"Замена гофры",
 			"Замена катализатора на пламегаситель",
 			"Замена лямбда зонда",
-			"Замена приемной трубы глушителя",
+			"Замена приемной трубы глушителя"
 		],
-		icon: wrench,
+		icon: wrench
 	}, {
 		name: "Ремонт тормозной системы",
 		description: [
@@ -132,9 +222,9 @@ export const services = [
 			"Замена главного тормозного цилиндра",
 			"Замена заднего суппорта",
 			"Замена колодок стояночного тормоза",
-			"Замена переднего суппорта",
+			"Замена переднего суппорта"
 		],
-		icon: brake,
+		icon: brake
 	}, {
 		name: "Ремонт кондиционеров и отопления",
 		description: [
@@ -145,9 +235,9 @@ export const services = [
 			"Замена радиатора кондиционера",
 			"Замена радиатора охлаждения",
 			"Замена радиатора печки",
-			"Замена ремня кондиционера",
+			"Замена ремня кондиционера"
 		],
-		icon: fan,
+		icon: fan
 	}, {
 		name: "Шиномонтажные работы",
 		description: [
@@ -157,9 +247,9 @@ export const services = [
 			"Балансировка колес r16 радиус",
 			"Балансировка колес r17 радиус",
 			"Балансировка колеса r14 радиус",
-			"Шиномонтаж",
+			"Шиномонтаж"
 		],
-		icon: tire,
+		icon: tire
 	}, {
 		name: "Ремонт электрооборудования автомобиля",
 		description: [
@@ -169,10 +259,173 @@ export const services = [
 			"Замена датчика положения дроссельной заслонки",
 			"Замена датчика положения коленвала",
 			"Замена датчика положения распредвала",
-			"Замена датчика скорости",
+			"Замена датчика скорости"
 		],
-		icon: accumulator,
+		icon: accumulator
 	},
+];
+export const bonuses = [
+	{
+		percent: 3,
+		text: "Пользователи, которые прошли регистрацию получают статус «Бронза» с 3% от покупок",
+		image: bronze
+	}, {
+		percent: 5,
+		text: "Пользователи, которые потратили от 500 000 тенге (на все товары и услуги), получают статус «Серебро» с 5% от покупок",
+		image: gold
+	}, {
+		percent: 7,
+		text: "Пользователи, которые потратили от 700 000 тенге (на все товары и услуги), получают 7% от покупок",
+		image: silver
+	}
+];
+export const works = [
+	{
+		car: {
+			images: [work1],
+			mark: brands.bmw,
+			model: "5 серии f 90",
+			year_manufacture: 2021,
+		},
+		services: [
+			"Замена АКПП",
+			"Замена раздатка",
+			"Замена масла в АКПП",
+			"Замена поддона АКПП",
+			"Замена масла в раздатке",
+			"Замена сальника лобового АККП"
+		]
+	}, {
+		car: {
+			images: [work2],
+			mark: brands.ford,
+			model: "C-max",
+			year_manufacture: 2021,
+		},
+		services: [
+			"Замена тормозных дисков",
+			"Замена раздатка",
+			"Замена тормозных колодок",
+			"Диагностика тормозной системы"
+		]
+	}, {
+		car: {
+			images: [work3],
+			mark: brands.subaru,
+			model: "Forester",
+			year_manufacture: 2011,
+		},
+		services: [
+			"Замена АКПП",
+			"Замена раздатка",
+			"Замена масла в АКПП",
+			"Замена поддона АКПП",
+			"Замена масла в раздатке",
+			"Замена сальника лобового АККП"
+		]
+	}, {
+		car: {
+			images: [work4],
+			mark: brands.mazda,
+			model: "5 серии f 90",
+			year_manufacture: 2021,
+		},
+		services: [
+			"Замена АКПП",
+			"Замена раздатка",
+			"Замена масла в АКПП",
+			"Замена поддона АКПП",
+			"Замена масла в раздатке",
+			"Замена сальника лобового АККП"
+		]
+	}, {
+		car: {
+			images: [work5],
+			mark: brands.nissan,
+			model: "5 серии f 90",
+			year_manufacture: 2021,
+		},
+		services: [
+			"Замена АКПП",
+			"Замена раздатка",
+			"Замена масла в АКПП",
+			"Замена поддона АКПП",
+			"Замена масла в раздатке",
+			"Замена сальника лобового АККП"
+		]
+	}
+];
+export const discounts = [
+	{
+		title: "Бесплатная замена масла в двигателе",
+		text: "Каждому клиенту при покупке любого масла и масляного фильтра в сети автосервисов M1 сервис, услуга по их замене предоставляется БЕСПЛАТНО",
+		image: discount1,
+		started_at: "31.05.23",
+		ended_at: "05.06.23"
+	}, {
+		title: "10% скидка на тормозные диски",
+		text: "Каждому клиенту при покупке любого масла и масляного фильтра в сети автосервисов M1 сервис, услуга по их замене предоставляется БЕСПЛАТНО",
+		image: discount2,
+		started_at: "31.05.23",
+		ended_at: "05.06.23"
+	}, {
+		title: "Замена масла в подарок при прохождении ТО",
+		text: "Каждому клиенту при покупке любого масла и масляного фильтра в сети автосервисов M1 сервис, услуга по их замене предоставляется БЕСПЛАТНО",
+		image: discount3,
+		started_at: "31.05.23",
+		ended_at: "05.06.23"
+	}, {
+		title: "Бесплатная замена масла в двигателе",
+		text: "Каждому клиенту при покупке любого масла и масляного фильтра в сети автосервисов M1 сервис, услуга по их замене предоставляется БЕСПЛАТНО",
+		image: discount1,
+		started_at: "31.05.23",
+		ended_at: "05.06.23"
+	}, {
+		title: "10% скидка на тормозные диски",
+		text: "Каждому клиенту при покупке любого масла и масляного фильтра в сети автосервисов M1 сервис, услуга по их замене предоставляется БЕСПЛАТНО",
+		image: discount2,
+		started_at: "31.05.23",
+		ended_at: "05.06.23"
+	}
+];
+export const news = [
+	{
+		id: "1",
+		title: "Повышение предельных цен на газ на заправках утвердили в Казахстане",
+		image: news1
+	}, {
+		id: "2",
+		title: "Премиальная марка Hongqi появится в Казахстане с четырьмя моделями ",
+		image: news2
+	}, {
+		id: "3",
+		title: "Премиальная марка Hongqi появится в Казахстане с четырьмя моделями",
+		image: news3
+	}, {
+		id: "4",
+		title: "Бесплатный компрессор ARB при покупке блокировки",
+		image: news4
+	}, {
+		id: "5",
+		title: "Амортизаторы задней двери ARB Tailgate Assist",
+		image: news5
+	}, {
+		id: "6",
+		title: "Премиальная марка Hongqi появится в Казахстане с четырьмя моделями",
+		image: news6
+	}, {
+		id: "7",
+		title: "Повышение предельных цен на газ на заправках утвердили в Казахстане",
+		image: news7
+	}, {
+		id: "8",
+		title: "Амортизаторы задней двери ARB Tailgate Assist",
+		image: news8
+	}, {
+		id: "9",
+		title: "Бесплатный компрессор ARB при покупке блокировки",
+		image: news9
+	}
 ];
 export const services2 = [
 	{
@@ -184,7 +437,7 @@ export const services2 = [
 			"Топливный",
 		],
 		icon: instruments,
-		image: servicesImage1,
+		image: service1,
 	}, {
 		name: "Обслуживание тормозных систем",
 		description: [
@@ -194,7 +447,7 @@ export const services2 = [
 			"Замена тормозной жидкости",
 		],
 		icon: brake,
-		image: servicesImage2,
+		image: service2,
 	}, {
 		name: "Техническое обслуживание",
 		description: [
@@ -204,7 +457,7 @@ export const services2 = [
 			"Промывка радиатора печки",
 		],
 		icon: wrench,
-		image: servicesImage3,
+		image: service3,
 	}, {
 		name: "Геометрия колес",
 		description: [
@@ -218,7 +471,7 @@ export const services2 = [
 			"Шиномонтаж r16 радиус",
 		],
 		icon: tire,
-		image: servicesImage4,
+		image: service4,
 	}, {
 		name: "Замена технических жидкостей",
 		description: [
@@ -228,7 +481,7 @@ export const services2 = [
 			"Жидкостей в редукторе (мостах)",
 		],
 		icon: diagnostics,
-		image: servicesImage5,
+		image: service5,
 	}, {
 		name: "Ремонт ходовой части",
 		description: [
@@ -238,7 +491,7 @@ export const services2 = [
 			"Замена наружного ШРУСа",
 		],
 		icon: steering,
-		image: servicesImage6,
+		image: service6,
 	}, {
 		name: "Мойка",
 		description: [
@@ -248,7 +501,7 @@ export const services2 = [
 			"Полировка интерьера",
 		],
 		icon: washing,
-		image: servicesImage7,
+		image: service7,
 	},
 ];
 export const user = {

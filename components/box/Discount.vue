@@ -13,9 +13,8 @@
 
 <script setup>
 	const props = defineProps({
-		item: Object,
+		item: Object
 	});
-
 	const route = useRouter();
 	const moveTo = () => route.push({ name: "discount-id", params: { id: props.item.id } });
 </script>
