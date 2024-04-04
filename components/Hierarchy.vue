@@ -10,15 +10,15 @@
 </template>
 
 <script setup>
-	const props = defineProps({
-		path: Array,
-	});
-	const isDevice = useIsDevice();
+const props = defineProps({
+	path: Array
+});
+const isDevice = useIsDevice();
 
-	function generatePath(idx) {
-		// we don't need to count last element, cause its only text
-		const levelsBack = (props.path.length - 1) - idx;
-		const path = "./".repeat(levelsBack);
-		return path;
-	}
+function generatePath(idx) {
+	// we don't need to count last element, cause its only text
+	const levelsBack = (props.path.length - 1) - idx;
+	const path = "./".repeat(levelsBack);
+	return path;
+}
 </script>

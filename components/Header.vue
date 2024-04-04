@@ -6,6 +6,6 @@
 </template>
 
 <script setup>
-	const isDevice = useIsDevice();
-	const emit = defineEmits("open");
+const isDevice = useIsDevice();
+const emit = defineEmits("open");
 </script>

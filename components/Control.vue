@@ -21,13 +21,13 @@
 </template>
 
 <script setup>
-	const emit = defineEmits("open");
-	const isDevice = useIsDevice();
-	const router = useRouter();
+const emit = defineEmits("open");
+const isDevice = useIsDevice();
+const router = useRouter();
 
-	function openSidebar() {
-		emit("open");
-		document.body.classList.add("freeze");
-	};
+function openSidebar() {
+	emit("open");
+	document.body.classList.add("freeze");
+};
 </script>
 

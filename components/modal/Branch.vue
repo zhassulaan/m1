@@ -20,7 +20,7 @@
 <script setup>
 	const props = defineProps({
 		branches: Array,
-		branch: Object,
+		branch: Object
 	});
 	const emit = defineEmits(["close", "confirm"]);
 	const branch = ref(props.branch);

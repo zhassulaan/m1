@@ -17,31 +17,28 @@
 </template>
 
 <script setup>
-  const props = defineProps({
-    items: Array,
-    itemsPerPage: Number,
-  });
-  const currentPage = ref(1);
+const props = defineProps({
+  items: Array,
+  itemsPerPage: Number
+});
+const currentPage = ref(1);
+const totalPages = computed(() => Math.ceil(props.items.length / props.itemsPerPage));
+const displayedItems = computed(() => {
+  const start = (currentPage.value - 1) * props.itemsPerPage;
+  const end = start + props.itemsPerPage;
+  return props.items.slice(start, end);
+});
 
-  const totalPages = computed(() => Math.ceil(props.items.length / props.itemsPerPage));
-  const displayedItems = computed(() => {
-    const start = (currentPage.value - 1) * props.itemsPerPage;
-    const end = start + props.itemsPerPage;
-    return props.items.slice(start, end);
-  });
-
-  function prevPage() {
-    if (currentPage.value > 1) {
-      currentPage.value--;
-    }
-  }
-  function nextPage() {
-    if (currentPage.value < totalPages.value) {
-      currentPage.value++;
-    }
-  }
-  function goToPage(pageNumber) {
-    currentPage.value = pageNumber;
-    // router.push(`/profile/history/${pageNumber}`);
-  }
+function prevPage() {
+  if (currentPage.value > 1)
+    currentPage.value--;
+}
+function nextPage() {
+  if (currentPage.value < totalPages.value)
+    currentPage.value++;
+}
+function goToPage(pageNumber) {
+  currentPage.value = pageNumber;
+  // router.push(`/profile/history/${pageNumber}`);
+}
 </script>

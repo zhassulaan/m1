@@ -7,8 +7,8 @@
 </template>
 
 <style scoped lang="scss">
-	.action {
-		display: flex;
-		align-items: center;
-	}
+.action {
+	display: flex;
+	align-items: center;
+}
 </style>

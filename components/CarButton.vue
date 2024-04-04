@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-	const props = defineProps({
-		type: Number,
-	});
+const props = defineProps({
+	type: Number
+});
 </script>

@@ -20,7 +20,7 @@
 	const emit = defineEmits(["close"]);
 	const item = {
 		name: "",
-		city: "",
+		city: ""
 	};
 
 	function closeModal() {
@@ -34,8 +34,8 @@
 					Authorization: `Bearer ${ getAccessToken() }`
 				},
 				body: JSON.stringify({
-					"name": item.name,
-				}),
+					"name": item.name
+				})
 			});
 			closeModal();
 		}

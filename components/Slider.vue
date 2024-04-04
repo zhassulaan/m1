@@ -14,34 +14,34 @@
 </template>
 
 <script setup>
-	const props = defineProps({
-		items: Array,
-		hasPagination: {
-			type: Boolean,
-			default: true
-		}
-	});
-	const swiperOptions = {
-		loop: true,
-		slidesPerView: "auto",
-		spaceBetween: 0
-	};
-	const paginationOptions = {
-		clickable: true,
-		dynamicBullets: false
-	};
-	const modules = [SwiperPagination];
-	let swiperInstance;
+const props = defineProps({
+	items: Array,
+	hasPagination: {
+		type: Boolean,
+		default: true
+	}
+});
+const swiperOptions = {
+	loop: true,
+	slidesPerView: "auto",
+	spaceBetween: 0
+};
+const paginationOptions = {
+	clickable: true,
+	dynamicBullets: false
+};
+const modules = [SwiperPagination];
+let swiperInstance;
 
-	function onSwiper(swiper) {
-		swiperInstance = swiper;
-	}
-	function goToPrevSlide() {
-		if (swiperInstance)
-			swiperInstance.slidePrev();
-	}
-	function goToNextSlide() {
-		if (swiperInstance)
-			swiperInstance.slideNext();
-	}
+function onSwiper(swiper) {
+	swiperInstance = swiper;
+}
+function goToPrevSlide() {
+	if (swiperInstance)
+		swiperInstance.slidePrev();
+}
+function goToNextSlide() {
+	if (swiperInstance)
+		swiperInstance.slideNext();
+}
 </script>

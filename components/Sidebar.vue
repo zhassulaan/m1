@@ -27,19 +27,19 @@
 </template>
 
 <script setup>
-	const emit = defineEmits(["close", "open"]);
-	const router = useRouter();
+const emit = defineEmits(["close", "open"]);
+const router = useRouter();
 
-	function closeSidebar() {
-		emit("close");
-		document.body.classList.remove("freeze");
-	};
-	function openLang() {
-		emit("open");
-		closeSidebar();
-	};
-	function moveTo(url) {
-		router.push(`/${ url }`)
-		closeSidebar();
-	};
+function closeSidebar() {
+	emit("close");
+	document.body.classList.remove("freeze");
+};
+function openLang() {
+	emit("open");
+	closeSidebar();
+};
+function moveTo(url) {
+	router.push(`/${ url }`)
+	closeSidebar();
+};
 </script>

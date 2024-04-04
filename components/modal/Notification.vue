@@ -21,7 +21,6 @@
 
 <script setup>
 	const emit = defineEmits("close");
-
 	const rating = ref(0);
 	const comment = ref("");
 

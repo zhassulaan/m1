@@ -4,6 +4,17 @@ import advantagesIcon3 from "@/assets/icons/advantages/icon3.svg";
 import advantagesIcon4 from "@/assets/icons/advantages/icon4.svg";
 import advantagesIcon5 from "@/assets/icons/advantages/icon5.svg";
 import advantagesIcon6 from "@/assets/icons/advantages/icon6.svg";
+import reglament1 from "@/assets/icons/reglaments/icon1.svg";
+import reglament2 from "@/assets/icons/reglaments/icon2.svg";
+import reglament3 from "@/assets/icons/reglaments/icon3.svg";
+import reglament4 from "@/assets/icons/reglaments/icon4.svg";
+import reglament5 from "@/assets/icons/reglaments/icon5.svg";
+import reglament6 from "@/assets/icons/reglaments/icon6.svg";
+import reglament7 from "@/assets/icons/reglaments/icon7.svg";
+import reglament8 from "@/assets/icons/reglaments/icon8.svg";
+import reglament9 from "@/assets/icons/reglaments/icon9.svg";
+import reglament10 from "@/assets/icons/reglaments/icon10.svg";
+import reglament11 from "@/assets/icons/reglaments/icon11.svg";
 import accumulator from "@/assets/icons/services/accumulator.svg";
 import brake from "@/assets/icons/services/brake.svg";
 import diagnostics from "@/assets/icons/services/diagnostics.svg";
@@ -425,6 +436,53 @@ export const news = [
 		id: "9",
 		title: "Бесплатный компрессор ARB при покупке блокировки",
 		image: news9
+	}
+];
+export const reglaments = [
+	{
+		name: "Воздушный фильтр",
+		number: "10 тыс. км.",
+		icon: reglament1
+	}, {
+		name: "Охлаждающая жидкость",
+		number: "30 тыс. км.",
+		icon: reglament2
+	}, {
+		name: "Маслов в коробке АКПП",
+		number: "40-60 тыс. км.",
+		icon: reglament3
+	}, {
+		name: "Маслов в коробке МКПП",
+		number: "30-90 тыс. км.",
+		icon: reglament4
+	}, {
+		name: "Колодки для АКПП",
+		number: "25-30 тыс. км.",
+		icon: reglament5
+	}, {
+		name: "Колодки для МКПП",
+		number: "35-50 тыс. км.",
+		icon: reglament6
+	}, {
+		name: "Топливный фильтр",
+		number: "10-20 тыс. км.",
+		icon: reglament7
+	}, {
+		name: "Масло в дифференциалах",
+		number: "30-60 тыс. км.",
+		icon: reglament8
+	}, {
+		name: "Ремни ГРМ",
+		number: "80-120 тыс. км.",
+		icon: reglament9
+	}, {
+		name: "Масло в раздаточной коробке",
+		number: "30 тыс. км.",
+		icon: reglament10
+	}, {
+		name: "Свечи зажигания",
+		number: "10 тыс. км.",
+		icon: reglament11
 	}
 ];
 export const services2 = [

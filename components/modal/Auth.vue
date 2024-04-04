@@ -53,14 +53,14 @@
 
 <script setup>
 	const props = defineProps({
-		item: Object,
+		item: Object
 	});
 	const type = ref(0);
 	const authIitem = {
 		name: "",
 		phone: "",
 		password: "",
-		passwordConfirm: "",
+		passwordConfirm: ""
 	};
 	let code = "";
 	const seconds = ref(60);
@@ -69,9 +69,8 @@
 		seconds.value = 60;
 		const timer = setInterval(() => {
 			seconds.value--;
-			if (seconds.value === 0) {
+			if (seconds.value === 0)
 				clearInterval(timer);
-			}
 		}, 1000);
 	}
 	async function login() {
@@ -82,12 +81,11 @@
 			},
 			body: JSON.stringify({
 				username: authIitem.phone,
-				password: authIitem.password,
-			}),
+				password: authIitem.password
+			})
 		});
-		if (loginData.value) {
+		if (loginData.value)
 			saveAuthTokens(loginData.value.access, loginData.value.refresh);
-		}
 	}
 	async function check_user() {
 		const { error } = await useFetch('http://86.107.45.124:8007/api/user/check_user/', {
@@ -96,8 +94,8 @@
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
-				username: authIitem.phone,
-			}),
+				username: authIitem.phone
+			})
 		});
 		if (authIitem.phone !== "" && error) {
 			console.log(error.value.data);
@@ -112,8 +110,8 @@
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify({
-				username: authIitem.phone,
-			}),
+				username: authIitem.phone
+			})
 		});
 		countdown();
 	}
@@ -125,12 +123,11 @@
 			},
 			body: JSON.stringify({
 				username: authIitem.phone,
-				code: code,
-			}),
+				code: code
+			})
 		});
-		if (data.value) {
+		if (data.value)
 			signup();
-		}
 	}
 	async function signup() {
 		if (authIitem.password && authIitem.password === authIitem.passwordConfirm) {
@@ -142,12 +139,11 @@
 				body: JSON.stringify({
 					username: authIitem.phone,
 					name: authIitem.name,
-					password: authIitem.password,
-				}),
+					password: authIitem.password
+				})
 			});
-			if (signupData.value) {
+			if (signupData.value)
 				saveAuthTokens(signupData.value.access, signupData.value.refresh);
-			}
 		}
 	}
 	function submit() {

@@ -58,16 +58,16 @@
 </template>
 
 <script setup>
-	import { notifications } from "~/data";
+import { notifications } from "@/assets/data";
 
-	const isDevice = useIsDevice();
-	const props = defineProps({
-		canEdit: Boolean,
-	});
-	const emit = defineEmits(["editing"]);
-	const router = useRouter();
+const isDevice = useIsDevice();
+const props = defineProps({
+	canEdit: Boolean
+});
+const emit = defineEmits(["editing"]);
+const router = useRouter();
 
-	function edit() {
-		emit("editing");
-	};
+function edit() {
+	emit("editing");
+};
 </script>

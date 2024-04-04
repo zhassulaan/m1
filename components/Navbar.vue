@@ -24,5 +24,5 @@
 </template>
 
 <script setup>
-	const router = useRouter();
+const router = useRouter();
 </script>

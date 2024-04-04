@@ -7,12 +7,12 @@
 </template>
 
 <script setup>
-	const props = defineProps({
-		items: Array
-	});
-	const paginationOptions = {
-		clickable: true,
-		dynamicBullets: false
-	};
-	const modules = [SwiperPagination];
+const props = defineProps({
+	items: Array
+});
+const paginationOptions = {
+	clickable: true,
+	dynamicBullets: false
+};
+const modules = [SwiperPagination];
 </script>

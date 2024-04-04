@@ -18,7 +18,7 @@
 <script setup>
 	const props = defineProps({
 		items: Array,
-		time: String,
+		time: String
 	});
 	const emit = defineEmits(["close", "confirm"]);
 	const time = ref(props.time);

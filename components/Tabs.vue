@@ -24,11 +24,11 @@
 </template>
 
 <script setup>
-	const router = useRouter();
-	const emit = defineEmits("close");
+const router = useRouter();
+const emit = defineEmits("close");
 
-	function moveTo(url) {
-		emit("close");
-		router.push(`/${ url }`)
-	}
+function moveTo(url) {
+	emit("close");
+	router.push(`/${ url }`)
+}
 </script>
