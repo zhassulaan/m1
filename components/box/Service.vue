@@ -1,4 +1,3 @@
-
 <template>
 	<div class="service-box" :class="{ 'not_active': !isOpen }">
 		<img :src="item.image" class="service-box__image" v-if="withImage" />
@@ -8,6 +7,7 @@
 				<h6 class="title">{{ item.name }}</h6>
 				<icon-chevron-blue class="btn" :class="{ 'active': isOpen }" v-if="!isDevice" @click="isOpen = !isOpen" />
 			</div>
+
 			<div
 				class="service-box__info-body"
 				:class="{ 'show': mouseOver }"
@@ -16,8 +16,8 @@
 				@mouseleave="mouseOver = false"
 			>
 				<div class="textbox">
-					<p v-for="(serviceItem, idx) in item.services" :key="idx" class="text">
-						<input type="checkbox" v-if="withCheckbox" v-model="isChecked[idx]" />
+					<p :key="id" v-for="(serviceItem, id) in item.services" class="text">
+						<input type="checkbox" v-if="withCheckbox" v-model="isChecked[id]" />
 						{{ serviceItem.name }}
 					</p>
 				</div>
@@ -30,9 +30,8 @@
 	const props = defineProps({
 		item: Object,
 		withImage: Boolean,
-		withCheckbox: Boolean,
+		withCheckbox: Boolean
 	});
-
 	const isDevice = useIsDevice();
 	const isOpen = ref(false);
 	const isChecked = ref([]);
